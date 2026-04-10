@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - Richard Smith</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<!--Main Menu--->
+
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="images/logo.png" class="logo">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">services</a></li>
+					<li><a href="#">Streaming|Content</a></li>
+					<li><a href="#">Inquiries/Contact</a></li>
+					<li><a href="#">Misc.</a></li>
+				</ul>
+			</nav>
+			<div class="header-text">
+				<h1>Richard Smith</h1>
+				<p>Computer Science Engineer | Streamer</p>
+			</div>
+		</div>
+	</div>
+
+	<!--About--->
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col1">
+					<img src="images/pfp.jpg">
+				</div>
+				<div class="about-col2">
+					<h1 class="subtitle">About Me</h1>
+					<p>this issome gibberish used as placeholder text until i can write something good about myself. blah blah blah blah blah blah blah blah ablha lahf dsf af asdfasdfasd fsdf fdasdf adsfasf fdwefe fe efsdf adeqefq gey ynyujeyh wergvf vadvsc.</p>
+					<div class="tabs">
+						<p class="tab-links active" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+					</div>
+					<div class="tab-contents active" id="skills">
+						<ul>
+							<li><span>Software Engineering</span><br>Programming full stack programs</li>
+							<li><span>SQL</span><br>Database design and management</li>
+							<li><span>IT</span><br>Trouble Shooting and on the Spot fixes</li>
+							<li><span>Design</span><br>by humans for humans</li>
+							<li><span>Bilingual</span><br>Fluent in Both English and Spanish</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>International Ministries</span><br>Programming full stack programs</li>
+							<li><span>Streamer</span><br>Entertaining to the masses</li>
+							<li><span>Hackathons</span><br>High pressure programming</li>
+							<li><span>Internship</span><br>Database design and management</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>Utoledo</span><br>2024-2028 | B.S. Computer Science and Engineering</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Services--->
+
+	<div id="services">
+		<div class="container">
+			<h1 class="subtitle">Services</h1>
+			<div class="service-list">
+				<div>
+					<h2><i class="nf nf-fa-pencil"></i> Art</h2>
+					<p>salkfdlksadjflka lkdjf lsakjf lksajf alksjf;lksajf ;lsakjf a;lsdkfjalkdfas fiuhf</p>
+					<a href="#">Learn More</a>
+				</div>			
+				<div>
+					<h2><i class="nf nf-fa-code"></i> Programs</h2>
+					<p>salkfdlksadjflka lkdjf lsakjf lksajf alksjf;lksajf ;lsakjf a;lsdkfjalkdfas fiuhf</p>
+					<a href="#">Learn More</a>
+				</div>			
+			</div>	
+		</div>
+	</div>
+
+	<!--portfolio--->
+
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="subtitle">My Work</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="images/work-art-1.png">
+					<div class="layer">
+						<h3>Twitch Emote</h3>
+						<p>Commisioned Twitch emote for fellow streamer Pxnda__</p>
+						<a href="#"></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="images/work-art-2.png">
+					<div class="layer">
+						<h3>Floaty Dude</h3>
+						<p>Game Jam Project</p>
+						<a href="#"><i class="nf nf-md-link_variant"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="images/work-app-1.png">
+					<div class="layer">
+						<h3>Twitch Emote</h3>
+						<p>Commisioned Twitch emote for fellow streamer Pxnda__</p>
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+		function opentab(tabname) {
+			for(tablink of tablinks) tablink.classList.remove("active");
+			for(tabcontent of tabcontents) tabcontent.classList.remove("active");
+			event.currentTarget.classList.add("active");
+			document.getElementById(tabname).classList.add("active");
+		}
+
+	</script>
+</body>
+
+</html>
