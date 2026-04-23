@@ -11,18 +11,18 @@
 
 <body>
 
-	<!--Main Menu--->
+	<!-- Nav Bar --->
 
 	<div id="header">
 		<div class="container">
-			<nav>
-				<img src="images/logo.png" class="logo">
+			<nav class="static">
+				<img src="images/logo.png" class="logo"></img>
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
-					<li><a href="#">services</a></li>
-					<li><a href="#">Streaming|Content</a></li>
-					<li><a href="#">Inquiries/Contact</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Streaming</a></li>
+					<li><a href="#">Contact</a></li>
 					<li><a href="#">Misc.</a></li>
 				</ul>
 			</nav>
@@ -43,7 +43,7 @@
 				</div>
 				<div class="about-col2">
 					<h1 class="subtitle">About Me</h1>
-					<p>this issome gibberish used as placeholder text until i can write something good about myself. blah blah blah blah blah blah blah blah ablha lahf dsf af asdfasdfasd fsdf fdasdf adsfasf fdwefe fe efsdf adeqefq gey ynyujeyh wergvf vadvsc.</p>
+					<p>Richard is an Undergraduate Student at the University of Toledo studying Computer Science and Engineering. His passing for collecting new skills has driven him into exploring multiple fascets of technology including the use of Arch linux, bash, html, and java among other things. When he is not studying, he is learning new tricks and skills, working on independant programming prjects or speedrunning his favorite games live of Twitch.</p>
 					<div class="tabs">
 						<p class="tab-links active" onclick="opentab('skills')">Skills</p>
 						<p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -106,8 +106,7 @@
 					<img src="images/work-art-1.png">
 					<div class="layer">
 						<h3>Twitch Emote</h3>
-						<p>Commisioned Twitch emote for fellow streamer Pxnda__</p>
-						<a href="#"></a>
+						<p>Commissioned Twitch emote for fellow streamer Pxnda__</p>
 					</div>
 				</div>
 				<div class="work">
@@ -115,20 +114,50 @@
 					<div class="layer">
 						<h3>Floaty Dude</h3>
 						<p>Game Jam Project</p>
-						<a href="#"><i class="nf nf-md-link_variant"></i></a>
+						<a href="https://github.com/JudeLingan/floaty-dude"><i class="nf nf-md-link_variant"></i></a>
 					</div>
 				</div>
 				<div class="work">
 					<img src="images/work-app-1.png">
 					<div class="layer">
-						<h3>Twitch Emote</h3>
-						<p>Commisioned Twitch emote for fellow streamer Pxnda__</p>
-						<a href="#"></a>
+						<h3>Project EREBUS</h3>
+						<p>RocketHacks 2026 Project</p>
+						<a href="https://github.com/JudeLingan/rockethacks2026"><i class="nf nf-md-link_variant"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="images/placeholder.jpg">
+					<div class="layer">
+						<h3>DyShu</h3>
+						<p>RocketHacks 2025 Project</p>
+						<a href="https://github.com/RichardSmith240/RocketHacks2025"><i class="nf nf-md-link_variant"></i></a>
 					</div>
 				</div>
 			</div>
+			<a href="#" class="btn">See More</a>
 		</div>
 	</div>
+
+	<!--Contact--->
+
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="subtitle">Contact Me</h1>
+					<p>contact@contact.cmo</p>
+					<p>+1(000)000-000</p>
+					<div class="social-icons">
+						<a href=""></a>
+					</div>
+				<div class="contact-left">
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+
+	<!--Scripts--->
 
 	<script>
 		var tablinks = document.getElementsByClassName("tab-links");
@@ -139,7 +168,6 @@
 			event.currentTarget.classList.add("active");
 			document.getElementById(tabname).classList.add("active");
 		}
-
 	</script>
 </body>
 
